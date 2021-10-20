@@ -1,4 +1,58 @@
 .header {
-    background-color: blue;
-    min-width: 8em;
+    background-color: #4A23DE;
+    width: 130px;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &:hover {
+        width: 300px;
+
+        .main-nav__itemName {
+            display: block;
+        }
+
+        .logo-small {
+            display: none;
+        }
+
+        .logo-container .logo-normal {
+            display: block;
+            width: 255px;
+            padding-top: 19px;
+        }
+    }
+
+    .logo-container {
+        background-color: #fff;
+        padding: 2rem 1rem;
+        height: 130px;
+
+        .logo-small {
+            width: 100px;
+        }
+
+        .logo-normal {
+            display: none;
+        }
+    }
+
+    .main-nav {
+        padding: 2rem;
+        margin-top: 8rem;
+        color: #fff;
+
+        &__itemName {
+            display: none;
+        }
+
+        &__itemLink {
+            padding: 1.5rem 1rem;
+            display: inline-block;
+        }
+    }
 }
