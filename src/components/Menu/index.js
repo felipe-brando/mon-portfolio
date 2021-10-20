@@ -1,4 +1,4 @@
-import logo from '../../assets/logo-small.png'; 
+import logo from '../../assets/logo-small.svg'; 
 import { Home, Layout, User, Mail  } from 'react-feather';
 import './style.scss';
 
