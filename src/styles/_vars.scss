@@ -1,3 +1,9 @@
 @use 'sass:math';
 @use 'sass:color';
 
+    $blueMain: #4A23DE;
+    $blueMainAlt: color.scale($blueMain, $lightness: 20%);
+    $blueLight: #20bae5;
+    $greyLight: #f7f7f7;
+
+    $font: Montserrat, Helveltica, Arial, sans-serif;
