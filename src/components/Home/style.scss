@@ -1,0 +1,11 @@
+.intro {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    &__content {
+        width: 50%;
+    }
+}
