@@ -16,7 +16,7 @@ function App() {
       <Route path="/portfolio" exact>
         <div>portfolio</div>
       </Route>
-      <Route path="/a-propo" exact>
+      <Route path="/a-propos" exact>
         <div>A propo</div>
       </Route>
       <Route path="/contact" exact>

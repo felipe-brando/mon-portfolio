@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Home, Layout, User, Mail } from 'react-feather';
 
 // == Composant
-const MenuList = ({closeMobileMenu}) => {
+const MenuList = ({ closeMobileMenu }) => {
     return (
       <ul className="main-nav__liste">
         <li className="main-nav__item">
