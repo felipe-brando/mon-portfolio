@@ -1,3 +1,5 @@
+import { Route } from 'react-router-dom';
+
 import Menu from '../../components/Menu';
 import Home from '../../components/Home';
 
@@ -8,7 +10,18 @@ function App() {
   return (
     <div className="app">
       <Menu />
-      <Home />
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/portfolio" exact>
+        <div>portfolio</div>
+      </Route>
+      <Route path="/a-propo" exact>
+        <div>A propo</div>
+      </Route>
+      <Route path="/contact" exact>
+        <div>Contact</div>
+      </Route>
     </div>
   );
 }

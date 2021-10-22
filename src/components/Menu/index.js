@@ -1,6 +1,7 @@
 import smallLogo from '../../assets/logo-small.svg'; 
-import normalLogo from '../../assets/logo.svg'; 
-import { Home, Layout, User, Mail  } from 'react-feather';
+import normalLogo from '../../assets/logo.svg';
+
+import MenuList from './MenuList';
 import './style.scss';
 
 const Menu = () => {
@@ -12,12 +13,7 @@ const Menu = () => {
         <img src={normalLogo} className="logo-normal" alt="logo" />
       </div>
       <nav className="main-nav">
-        <ul className="main-nav__item">
-          <li className="main-nav__item"><a className="main-nav__itemLink" href="#"><Home /><span className="main-nav__itemName">Accueil</span></a></li>
-          <li className="main-nav__item"><a className="main-nav__itemLink" href="#"><Layout /><span className="main-nav__itemName">Portfolio</span></a></li>
-          <li className="main-nav__item"><a className="main-nav__itemLink" href="#"><User /><span className="main-nav__itemName">A propo</span></a></li>
-          <li className="main-nav__item"><a className="main-nav__itemLink" href="#"><Mail /><span className="main-nav__itemName">Contact</span></a></li>
-        </ul>
+        <MenuList />
       </nav>
     </header>
   );
