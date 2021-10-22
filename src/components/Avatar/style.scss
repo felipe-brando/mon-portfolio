@@ -1,12 +1,22 @@
 
 .character {
     width: 50%;
+    position: relative;
+
     
+  /*  
     svg#character {
         max-width: 26em;
     }
-
-    .left-eye, .right-eye {
+*/
+    
+    .eye {
+        position: relative;
+    }
+    .pupil {
+        position:absolute;
+        top:8px;
+     
       animation: squeeze 3s infinite;
     }
     
@@ -25,4 +35,33 @@
 }
 
 
-
+.eyes-follow {
+    width: 100%;
+    position:absolute; 
+    top:28%;
+    left:-7%;
+  
+    .eyes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      .eye {
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5rem;
+        margin-left: 11%;
+  
+        .pupil {
+          background: #6E2424;
+          border-radius: 50%;
+          position: absolute;
+          width: 1em;
+          height: 1em;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
