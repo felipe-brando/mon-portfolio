@@ -5,4 +5,24 @@
     svg#character {
         max-width: 26em;
     }
+
+    .left-eye, .right-eye {
+      animation: squeeze 3s infinite;
+    }
+    
+    @keyframes squeeze {
+      90% {
+        transform: none;
+        animation-timing-function: ease-in;
+      }
+      93% {
+        transform: scaleY(0.8)
+      }
+      100% {
+        animation-timing-function: ease-out;
+      }
+    }
 }
+
+
+
