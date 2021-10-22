@@ -2,8 +2,8 @@
 
 .header {
     background-color: vars.$blueMain;
-    width: 130px;
-    left: 0;
+    width: 240px;
+    left: -280px;
     height: 100vh;
     position: fixed;
     z-index: 10;
@@ -12,6 +12,12 @@
     justify-content: flex-start240px;
     transition: all 0.3s ease-in;
     box-shadow: 2px 0px 14px 0px #00000033;
+
+    @media screen and (min-width: 992px) { 
+        left: 0;
+        width: 130px;
+    }
+
 
 
     &:hover {
@@ -86,5 +92,19 @@
                 box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
             }
         }
+    }
+}
+
+.bureger__btn {
+    align-self: flex-start;
+    position: absolute;
+    right: 0;
+    z-index: 13;
+    margin: 3rem 1rem;
+    display: block;
+    color: #FC5253;
+
+    @media screen and (min-width: 992px) { 
+        display: none;
     }
 }
