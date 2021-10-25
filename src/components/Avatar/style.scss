@@ -3,65 +3,74 @@
     width: 50%;
     position: relative;
 
-    
-  /*  
-    svg#character {
-        max-width: 26em;
-    }
-*/
-    
-    .eye {
-        position: relative;
-    }
-    .pupil {
-        position:absolute;
-        top:8px;
-     
-      animation: squeeze 3s infinite;
-    }
-    
-    @keyframes squeeze {
-      90% {
-        transform: none;
-        animation-timing-function: ease-in;
+  &__avatar {
+    max-width: 25em;
+  }
+
+  .eyes-follow {
+      width: 26%;
+      position:absolute; 
+      top:27%;
+      left:36%;
+  
+      @media screen and (min-width: 992px) { 
+        position:absolute; 
+        left:8em;
       }
-      93% {
-        transform: scaleY(0.8)
+    
+      .eyes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .eye {
+          border-radius: 50%;
+          height: 0.8em;
+          width: 0.8em;
+          /*margin-left: 11%;*/
+       
+  
+          @media screen and (min-width: 992px) { 
+            width: 2em;
+            height: 2em;
+          }
+    
+          .pupil {
+            background: #6E2424;
+            border-radius: 50%;
+            position: absolute;
+            width: 0.3em;
+            height: 0.3em;
+            left: 30%;
+            top: 30%;
+            min-width: 0.3em;
+            animation: squeeze 3s infinite;
+  
+            @media screen and (min-width: 992px) { 
+              width: 0.6em;
+              height: 0.6em;
+              left: 70%;
+              top: 30%;
+            }
+          }
+
+          @keyframes squeeze {
+            90% {
+              transform: none;
+              animation-timing-function: ease-in;
+            }
+            93% {
+              transform: scale(0.3)
+            }
+            100% {
+              animation-timing-function: ease-out;
+            }
+          }
+        }
       }
-      100% {
-        animation-timing-function: ease-out;
-      }
-    }
+    
 }
 
 
-.eyes-follow {
-    width: 100%;
-    position:absolute; 
-    top:28%;
-    left:-7%;
-  
-    .eyes {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  
-      .eye {
-        border-radius: 50%;
-        height: 1.5em;
-        width: 1.5rem;
-        margin-left: 11%;
-  
-        .pupil {
-          background: #6E2424;
-          border-radius: 50%;
-          position: absolute;
-          width: 1em;
-          height: 1em;
-          left: 0;
-          top: 0;
-        }
-      }
-    }
   }
