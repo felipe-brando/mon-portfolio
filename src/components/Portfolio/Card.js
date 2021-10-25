@@ -2,17 +2,24 @@
 import { Link } from 'react-router-dom';
 
 // == Component
-const Card = () => {
+const Card = ({ name, description, html_url, homepage, default_branch }) => {
+
+ 
+    const img = '.jpg';
+    const p = '.gif';
+
+    console.log(img);
   
     return (
         <article className="card">
-            <img className="card__img" src="https://github.com/felipe-brando/hero-finder/blob/main/gif.gif?raw=true" alt="" />
+            <img className="card__img" src={`https://raw.githubusercontent.com/felipe-brando/${name}/${default_branch}/${name}.gif`} alt="" />
             <div className="card__content">
-                <h2 className="card__title">Work 1</h2>
-                <p className="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus diam, viverra vel interdum eu, ultrices et felis. Etiam porta vel nulla malesuada venenatis. Curabitur ut orci vitae neque venenatis porttitor. </p>
+                <h2 className="card__title">{name}</h2>
+                <p className="card__text">{description}</p>
                 <div className="card__links>"> 
-                    <Link to="#" className="card__github-link">Repo</Link>
-                    <Link to="#" className="card__demo-link">Demo</Link>
+                    <a href={html_url} rel="noreferrer" target="_blank" className="card__github-link">Repo</a>
+                    <a href={homepage} rel="noreferrer" target="_blank" className={homepage !== "" ? "card__demo-link" : "card__demo-link hidden"} >Demo</a> 
+
                 </div>
 
             </div>

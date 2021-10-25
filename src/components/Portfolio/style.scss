@@ -33,5 +33,9 @@
         &__github-link {
             margin-right: 1rem;
         }
+
+        &__demo-link.hidden {
+            display: none;
+        }
     }
 }

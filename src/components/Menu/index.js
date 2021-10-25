@@ -9,7 +9,6 @@ import './style.scss';
 
 const Menu = () => {
   const burgerIsOpen = useSelector((state) => state.burgerMenu.burgerOpen);
-  console.log(burgerIsOpen);
 
   const dispatch = useDispatch();
 

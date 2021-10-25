@@ -10,10 +10,10 @@ import './styles/index.scss';
 
 ReactDOM.render(
   <Provider store={store}>
-  <BrowserRouter>
-    <App />
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
-    </Provider>,
+  </Provider>,
   document.getElementById('root')
 );
 
