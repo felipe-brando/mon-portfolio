@@ -2,6 +2,7 @@ import { Route } from 'react-router-dom';
 
 import Menu from '../../components/Menu';
 import Home from '../../components/Home';
+import Portfolio from '../../components/Portfolio';
 
 import './App.css';
 import './style.scss';
@@ -14,7 +15,7 @@ function App() {
         <Home />
       </Route>
       <Route path="/portfolio" exact>
-        <div>portfolio</div>
+        <Portfolio />
       </Route>
       <Route path="/a-propos" exact>
         <div>A propo</div>
