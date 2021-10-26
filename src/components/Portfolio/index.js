@@ -9,10 +9,6 @@ const Portfolio = () => {
    
     const repos = useSelector((state) => state.repos.repos);
     console.log(repos);
-
-
-    
-  
     return (
         <Page>
           <div className="portfolio">

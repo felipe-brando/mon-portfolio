@@ -1,0 +1,125 @@
+@use '../../styles/vars';
+
+.about {
+    padding: 0rem 1rem 2rem 1rem;
+  
+    @media screen and (min-width: 992px) { 
+      padding: 4rem 0 4rem 0;
+    }
+  
+    &__title {
+        font-weight: 900;
+        color: vars.$blueLight;
+        font-size: 2.5em;
+    }
+    &__subtitle {
+      font-size: 0.8em;
+      position: relative;
+      padding-left: 3.9rem;
+      color: vars.$salmon;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.3rem;
+        width: 4em;
+        height: 0.1em;
+        background: vars.$salmon;
+      }
+    }
+    &__point {
+        color: vars.$salmon;
+        margin-left: 0.5rem;
+    }
+
+    &__content-intro {
+      margin-top: 3rem;
+      font-size: 1.1em;
+
+      @media screen and (min-width: 992px) { 
+        font-size: 1.2em;
+      }
+    }
+
+    &__content-text {
+      margin-top: 4rem;
+      position: relative;
+      padding-top: 2rem;
+
+
+      &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.3rem;
+          width: 14em;
+          height: 0.1em;
+          background: vars.$salmon;
+      }
+      &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 55rem;
+          width: 14em;
+          height: 0.1em;
+          background: vars.$salmon;
+
+          @media screen and (min-width: 992px) { 
+            top: 24rem;
+          }
+      }
+      
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+    }
+
+    &__text em {
+        font-weight: 700;
+        color: vars.$blueMain;
+    }
+
+    &__text a {
+      font-weight: 700;
+      color: vars.$salmon;
+      text-decoration: underline;
+  }
+
+    &__title2 {
+      font-weight: 700;
+      color: vars.$blueLight;
+      font-size: 1.5em;
+      margin: 5rem 0 2rem 0;
+    }
+
+    &__blocImages {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      @media screen and (min-width: 992px) { 
+        flex-direction: row;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      padding: 0.5rem;
+
+      @media screen and (min-width: 992px) { 
+        width: 33%;
+      }
+    }
+    &__blocLink {
+      display: flex;
+      justify-content: center;
+    }
+      
+
+}

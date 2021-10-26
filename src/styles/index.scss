@@ -7,6 +7,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: vars.$greyLight;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem;
+  font-family: vars.$font;
+  border: 0;
+  background: vars.$blueMain;  
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+button:hover{
+  background: vars.$blueMainAlt;
 }
 
 
