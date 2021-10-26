@@ -17,9 +17,13 @@ const Portfolio = () => {
         <Page>
             <div className="portfolio">
                 <h2 className="portfolio__title">Portfolio<span className="portfolio__point">.</span></h2>
-                {repos.map((repo) => (
-                <Card key={repo.id} {...repo} />
-            ))}
+                {repos.map((repo) => {
+                    if(repo.name !== 'felipe-brando'){
+                      return (
+                        <Card key={repo.id} {...repo} />
+                      );
+                    }
+                })}
                
 
  

@@ -27,12 +27,93 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            
+            width: 100%;
+        }
+
+        &__title {
+          font-weight: 900;
+          color: vars.$blueMain;
+          margin-bottom: 0.5rem;
+        }
+
+        &__text {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        &__topicsList {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.7em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        &__topics {
+          margin-right: 0.5rem;
+          margin-top: 0.5rem;
+          padding: 0.3rem;
+          border-radius: 10%;
+        }
+
+        &__topics.react {
+          background-color: #5ED3F3;
+        }
+        &__topics.javascript {
+          background-color: #EFD81D;
+        }
+        &__topics.api {
+          background-color: blue;
+        }
+        &__topics.axios {
+          background-color: #744BE8;
+        }
+        &__topics.quill {
+          background-color: #FCE100;
+        }
+        &__topics.react-router {
+          background-color: #CA4245;
+        }
+        &__topics.redux {
+          background-color: #764ABC;
+        }
+        &__topics.semantic {
+          background-color: #35BDB2;
+        }
+        &__topics.socket {
+          background-color: #21AF90;
+        }
+        &__topics.woocommerce {
+          background-color: #96598B;
+        }
+        &__topics.wordpress {
+          background-color: #0174A7;
+        }
+        
+
+
+        &__links {
+            border-top: solid 0.1px vars.$grey;
+            padding-top: 1rem;
+            display: flex;
+        }
+
+        &__links a {
+          display: flex;
+          align-items: center;
+        }
+
+        &__links a:hover {
+          color: vars.$salmon;
         }
 
         &__github-link {
             margin-right: 1rem;
-        }
+      }
+                  
+      &__linkName {
+        margin-left: 0.4rem;
+       }
 
         &__demo-link.hidden {
             display: none;
