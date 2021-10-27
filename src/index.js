@@ -8,6 +8,11 @@ import App from './components/App/App';
 import store from './store/index.js';
 import './styles/index.scss';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-170980350-1"; 
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
