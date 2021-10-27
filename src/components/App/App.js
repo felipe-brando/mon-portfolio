@@ -6,6 +6,7 @@ import Home from '../../components/Home';
 import Portfolio from '../../components/Portfolio';
 import About from '../../components/About';
 import NotFound from '../../components/NotFound';
+import CookieConsent from "react-cookie-consent";
 
 import './style.scss';
 
@@ -26,6 +27,14 @@ function App() {
 
   return (
     <div className="app">
+      <CookieConsent
+        buttonText="Ok, j'accepte"
+        style={{ background: "rgba(0,0,0,0.7)" }}
+        buttonStyle={{ background: "none", border: "solid 1px #FC5455", color: "#FC5455", fontSize: "13px" }}
+        expires={150}
+      >
+        En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies.
+      </CookieConsent>
       <Menu />
       <Switch>
         <Route path="/" exact>

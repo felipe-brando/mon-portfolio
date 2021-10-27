@@ -38,3 +38,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#rcc-confirm-button:hover {
+  background: vars.$salmon!important;
+  color: #fff!important;
+}
