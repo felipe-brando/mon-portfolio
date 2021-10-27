@@ -4,6 +4,7 @@
     background-color: vars.$blueMain;
     width: 240px;
     left: -280px;
+    top: 0;
     height: 100vh;
     position: fixed;
     z-index: 10;
@@ -111,7 +112,7 @@
     position: absolute;
     right: 0;
     z-index: 13;
-    margin: 3rem 1rem;
+    margin: 0 1rem;
     display: block;
     color: vars.$salmon;
     background: none;

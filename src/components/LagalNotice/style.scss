@@ -1,0 +1,58 @@
+@use '../../styles/vars';
+
+.legalNotice {
+    padding: 0rem 1rem 2rem 1rem;
+  
+    @media screen and (min-width: 992px) { 
+      padding: 4rem 0 4rem 0;
+    }
+  
+    &__title {
+        font-weight: 900;
+        color: vars.$blueLight;
+        font-size: 2.5em;
+    }
+    &__subtitle {
+      font-size: 0.8em;
+      position: relative;
+      padding-left: 3.9rem;
+      color: vars.$salmon;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.3rem;
+        width: 4em;
+        height: 0.1em;
+        background: vars.$salmon;
+      }
+    }
+    &__point {
+        color: vars.$salmon;
+        margin-left: 0.5rem;
+    }
+
+    &__content-text {
+      margin-top: 4rem;
+      position: relative;
+      padding-top: 2rem;
+      
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+    }
+
+
+    &__text a {
+      font-weight: 700;
+      color: vars.$salmon;
+      text-decoration: underline;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        color: vars.$salmonAlt;
+      }
+    }
+}

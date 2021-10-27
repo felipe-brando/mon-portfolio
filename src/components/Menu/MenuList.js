@@ -34,7 +34,7 @@ const MenuList = ({ closeMobileMenu }) => {
             className="main-nav__itemLink" 
             exact
           >
-            <User /><span className="main-nav__itemName">A propo</span>
+            <User /><span className="main-nav__itemName">A propos</span>
           </NavLink>
         </li>
         <li className="main-nav__item">

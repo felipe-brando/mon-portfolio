@@ -6,6 +6,8 @@ import Home from '../../components/Home';
 import Portfolio from '../../components/Portfolio';
 import About from '../../components/About';
 import NotFound from '../../components/NotFound';
+import LegalNotice from '../../components/LagalNotice';
+import Footer from '../../components/Footer';
 import CookieConsent from "react-cookie-consent";
 
 import './style.scss';
@@ -46,10 +48,14 @@ function App() {
         <Route path="/a-propos" exact>
           <About />
         </Route>
+        <Route path="/mentions-legales" exact>
+          <LegalNotice />
+        </Route>
         <Route path="*" status={404}>
           <NotFound />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

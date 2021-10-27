@@ -1,8 +1,9 @@
 .page {
     margin-top: 3rem;
+    width: 100%;
 
     @media screen and (min-width: 992px) { 
         width: calc(100% - 240px);
-        margin: 0 120px 0 250px;
+        margin: 0 120px 0 240px;
     }
 }
