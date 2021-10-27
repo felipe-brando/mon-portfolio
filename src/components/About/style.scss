@@ -83,6 +83,11 @@
       font-weight: 700;
       color: vars.$salmon;
       text-decoration: underline;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        color: vars.$salmonAlt;
+      }
   }
 
     &__title2 {

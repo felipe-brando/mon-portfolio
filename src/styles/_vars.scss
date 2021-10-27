@@ -7,5 +7,6 @@
     $greyLight: #f7f7f7;
     $grey: color.scale($greyLight, $blackness: 10%);
     $salmon: #FC5253;
+    $salmonAlt: color.scale($salmon, $lightness: 20%);
 
     $font: Montserrat, Helveltica, Arial, sans-serif;
