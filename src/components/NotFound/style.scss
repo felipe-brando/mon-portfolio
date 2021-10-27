@@ -1,0 +1,62 @@
+@use '../../styles/vars';
+
+.notFound {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 0.2rem 2rem 0.2rem;
+
+
+    @media screen and (min-width: 992px) { 
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    &__content {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+
+        @media screen and (min-width: 992px) { 
+            width: 50%;
+            margin-top: 0;
+            text-align: left;
+        }
+    }
+
+    &__hello {
+        font-weight: 700;
+        font-size: 1.4em;
+
+        @media screen and (min-width: 992px) { 
+            font-size: 1.5em;
+        }
+    }
+
+    &__presentation {
+        font-size: 1.5em;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        line-height: 0.8;
+
+        @media screen and (min-width: 992px) { 
+            font-size: 2.5em;
+            line-height: 1;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: vars.$salmon;
+        
+    }
+
+
+    
+}

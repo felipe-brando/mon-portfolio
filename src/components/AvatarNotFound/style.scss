@@ -1,0 +1,74 @@
+
+.NotFound-character {
+    width: 50%;
+    position: relative;
+
+  &__avatar {
+    max-width: 25em;
+  }
+
+  .eyes-follow {
+      width: 26%;
+      position:absolute; 
+      top:27%;
+      left:36%;
+  
+      @media screen and (min-width: 992px) { 
+        position:absolute; 
+        left:8em;
+      }
+    
+      .eyes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .eye {
+          border-radius: 50%;
+          height: 0.8em;
+          width: 0.8em;
+          /*margin-left: 11%;*/
+       
+  
+          @media screen and (min-width: 992px) { 
+            width: 2em;
+            height: 2em;
+          }
+    
+          .pupil {
+            position: absolute;
+            left: 5%;
+            top: -30%;
+            animation: squeeze 3s infinite;
+            font-size: 1em;
+            font-weight: 700;
+            color: #6E2424;
+  
+            @media screen and (min-width: 992px) { 
+              left: 42%;
+              top: -24%;
+              font-size: 2em;
+        
+            }
+          }
+
+          @keyframes squeeze {
+            90% {
+              transform: none;
+              animation-timing-function: ease-in;
+            }
+            93% {
+              transform: scale(0.3)
+            }
+            100% {
+              animation-timing-function: ease-out;
+            }
+          }
+        }
+      }
+    
+}
+
+
+  }
