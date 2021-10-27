@@ -1,5 +1,4 @@
 // == Import
-import { useSelector } from "react-redux";
 import Page from '../../components/Page';
 
 import montreal from '../../assets/montreal.jpg';
@@ -10,8 +9,6 @@ import './style.scss';
 // == Component
 const About = () => {
    
-    const repos = useSelector((state) => state.repos.repos);
-    console.log(repos);
     return (
         <Page>
           <div className="about">

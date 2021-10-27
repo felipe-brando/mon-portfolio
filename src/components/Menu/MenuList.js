@@ -1,4 +1,5 @@
 // == Import
+import PropTypes from 'prop-types';
 import { NavLink } from "react-router-dom";
 import { Home, Layout, User, Mail } from 'react-feather';
 
@@ -41,14 +42,17 @@ const MenuList = ({ closeMobileMenu }) => {
             onClick={closeMobileMenu} 
             href="mailto:f.brandotalero@gmail.com" 
             className="main-nav__itemLink" 
-            exact
           >
             <Mail /><span className="main-nav__itemName">Contact</span>
           </a>
         </li>
       </ul>  
     );
-  };
+};
+  
+MenuList.propTypes = {
+  closeMobileMenu: PropTypes.func.isRequired,
+};
 
   // == Export
   export default MenuList;

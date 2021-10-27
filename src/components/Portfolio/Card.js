@@ -1,8 +1,7 @@
 // == Import
+import PropTypes from 'prop-types';
 import { GitHub } from 'react-feather';
 import { ExternalLink } from 'react-feather';
-import { Link } from 'react-router-dom';
-
 
 // == Component
 const Card = ({ name, description, html_url, homepage, default_branch, topics }) => {
@@ -57,6 +56,16 @@ const Card = ({ name, description, html_url, homepage, default_branch, topics })
         </article>
       
     );
-  };
+};
+  
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  html_url: PropTypes.string.isRequired,
+  homepage: PropTypes.string.isRequired,
+  default_branch: PropTypes.string.isRequired,
+  topics: PropTypes.string.isRequired,
+};
+
   // == Export
   export default Card;
