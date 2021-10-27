@@ -105,6 +105,11 @@
     margin: 3rem 1rem;
     display: block;
     color: #FC5253;
+    background: none;
+
+    &:hover{
+        background: none; 
+    }
 
     @media screen and (min-width: 992px) { 
         display: none;
