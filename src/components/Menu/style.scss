@@ -76,7 +76,7 @@
             display: block;
             position: absolute;
             left: 69px;
-            top: 30px;
+            top: 25px;
             width: 100%;
 
             @media screen and (min-width: 992px) { 
@@ -99,6 +99,11 @@
             }
         }
     }
+
+    .active {
+        color: vars.$salmon;
+        font-weight: 700;
+    }
 }
 
 .bureger__btn {
@@ -108,7 +113,7 @@
     z-index: 13;
     margin: 3rem 1rem;
     display: block;
-    color: #FC5253;
+    color: vars.$salmon;
     background: none;
 
     &:hover{
