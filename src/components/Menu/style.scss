@@ -63,10 +63,14 @@
 
     .main-nav {
         padding: 2rem;
-        margin-top: 7rem;
+        margin-top: 3rem;
         color: #fff;
         position: relative;
         width: 100%;
+
+        @media screen and (min-width: 992px) { 
+            margin-top: 7rem;
+        }
 
         &__itemName {
             display: block;
