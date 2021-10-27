@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from "react-redux";
 import Menu from '../../components/Menu';
@@ -15,7 +15,14 @@ function App() {
     dispatch({
         type: 'FETCH_WORKS',      
     })
-}, []);
+  }, []);
+  
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [pathname]);
+
+
   return (
     <div className="app">
       <Menu />
