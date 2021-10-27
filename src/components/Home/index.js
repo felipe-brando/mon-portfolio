@@ -23,10 +23,10 @@ const Home = () => {
                                 <a className="intro__socialItem-Link" href="https://www.linkedin.com/in/felipe-brando-talero/" rel="noreferrer" target="_blank"><Linkedin /></a>
                             </li>
                             <li className="intro__socialItem">
-                                <a className="intro__socialItem-Link" href="https://www.linkedin.com/in/felipe-brando-talero/" rel="noreferrer" target="_blank"><GitHub /></a>
+                                <a className="intro__socialItem-Link" href="https://github.com/felipe-brando" rel="noreferrer" target="_blank"><GitHub /></a>
                             </li>
                             <li className="intro__socialItem">
-                                <a className="intro__socialItem-Link" href="https://www.linkedin.com/in/felipe-brando-talero/" rel="noreferrer" target="_blank"><Twitter /></a>
+                                <a className="intro__socialItem-Link" href="https://twitter.com/Brin_deau" rel="noreferrer" target="_blank"><Twitter /></a>
                             </li>
                             <li className="intro__socialItem">
                                 <a className="intro__socialItem-Link" href="mailto:f.brandotalero@gmail.com" rel="noreferrer" target="_blank"><Mail/></a>
