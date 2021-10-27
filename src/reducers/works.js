@@ -1,6 +1,6 @@
 const initialState = {
     repos: [],
-    
+    loading: true,
 };
   
 const reducer = (state = initialState, action = {}) => {
@@ -10,6 +10,7 @@ const reducer = (state = initialState, action = {}) => {
     return {
         ...state,
         repos: action.repos,
+        loading: false,
     };
     default:
       return state;

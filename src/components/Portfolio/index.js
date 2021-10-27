@@ -1,13 +1,19 @@
 // == Import
 import { useSelector } from "react-redux";
 import Page from '../../components/Page';
+import Loading from './Loading'
 import Card from './Card';
 import './style.scss';
 
 // == Component
 const Portfolio = () => {
    
-    const repos = useSelector((state) => state.repos.repos);
+  const repos = useSelector((state) => state.repos.repos);
+  const loading = useSelector((state) => state.repos.loading);
+  
+  if (loading) {
+    return <Loading />;
+  }
     return (
         <Page>
           <div className="portfolio">
