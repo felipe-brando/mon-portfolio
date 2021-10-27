@@ -2,7 +2,7 @@ import Page from '../../components/Page'
 import Avatar from '../../components/Avatar'
 import Cv from '../../assets/CV-Felipe-Brando-2021.pdf'
 
-import { Linkedin, GitHub, Twitter } from 'react-feather';
+import { Linkedin, GitHub, Twitter, Mail } from 'react-feather';
 
 
 import './style.scss';
@@ -27,6 +27,9 @@ const Home = () => {
                             </li>
                             <li className="intro__socialItem">
                                 <a className="intro__socialItem-Link" href="https://www.linkedin.com/in/felipe-brando-talero/" rel="noreferrer" target="_blank"><Twitter /></a>
+                            </li>
+                            <li className="intro__socialItem">
+                                <a className="intro__socialItem-Link" href="mailto:f.brandotalero@gmail.com" rel="noreferrer" target="_blank"><Mail/></a>
                             </li>
                         </ul>
                     </div>

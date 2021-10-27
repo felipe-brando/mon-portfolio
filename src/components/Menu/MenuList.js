@@ -37,14 +37,14 @@ const MenuList = ({ closeMobileMenu }) => {
           </NavLink>
         </li>
         <li className="main-nav__item">
-          <NavLink
+          <a
             onClick={closeMobileMenu} 
-            to="/contact" 
+            href="mailto:f.brandotalero@gmail.com" 
             className="main-nav__itemLink" 
             exact
           >
             <Mail /><span className="main-nav__itemName">Contact</span>
-          </NavLink>
+          </a>
         </li>
       </ul>  
     );

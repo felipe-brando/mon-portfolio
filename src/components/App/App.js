@@ -29,9 +29,6 @@ function App() {
       <Route path="/a-propos" exact>
         <About />
       </Route>
-      <Route path="/contact" exact>
-        <div>Contact</div>
-      </Route>
     </div>
   );
 }
