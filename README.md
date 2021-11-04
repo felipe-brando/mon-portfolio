@@ -5,8 +5,5 @@
 My personal portfolio <a href="https://felipebrando.fr/" target="_blank">felipebrando.fr</a> which displays some of my GitHub projects as well as my resume.
 To display my projects I use the GitHub REST API.
 
-This project was built using primarily ReactJs, Redux and Axios.
-<<<<<<< HEAD
-=======
+This project was built using primarily **ReactJs**, **Redux** and **Axios**.
 
->>>>>>> fb624bc02cd6a589840403d41d94b9eae967e33f
