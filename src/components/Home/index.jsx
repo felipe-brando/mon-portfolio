@@ -1,8 +1,8 @@
 import Page from '../../components/Page'
 import Avatar from '../../components/Avatar'
-import Cv from '../../assets/CV-Felipe-Brando-2021.pdf'
+import Cv from '../../assets/CV-Felipe-Brando-2026.pdf'
 
-import { Linkedin, GitHub, Twitter, Mail } from 'react-feather';
+import { Linkedin, GitHub, Mail } from 'react-feather';
 
 
 import './style.scss';
@@ -24,9 +24,6 @@ const Home = () => {
                             </li>
                             <li className="intro__socialItem">
                                 <a className="intro__socialItem-Link" href="https://github.com/felipe-brando" rel="noreferrer" target="_blank"><GitHub /></a>
-                            </li>
-                            <li className="intro__socialItem">
-                                <a className="intro__socialItem-Link" href="https://twitter.com/Brin_deau" rel="noreferrer" target="_blank"><Twitter /></a>
                             </li>
                             <li className="intro__socialItem">
                                 <a className="intro__socialItem-Link" href="mailto:f.brandotalero@gmail.com" rel="noreferrer" target="_blank"><Mail/></a>
