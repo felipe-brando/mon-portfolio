@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import App from './components/App/App';
-import store from './store/index.js';
+import store from './store';
 import './styles/index.scss';
 
 import ReactGA from 'react-ga';
