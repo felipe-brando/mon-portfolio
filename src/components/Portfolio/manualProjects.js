@@ -1,5 +1,5 @@
-import aupaImage from '../../assets/portfolio/aupa-immo.png';
-import leParadisImage from '../../assets/portfolio/le-paradis.png';
+import aupaImage from '../../assets/portfolio/aupa-immo.jpg';
+import leParadisImage from '../../assets/portfolio/le-paradis.jpg';
 
 const manualProjects = [
   {
