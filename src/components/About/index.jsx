@@ -16,13 +16,13 @@ const About = () => {
                 <p className="about__subtitle">Quelques infos</p>
             <div className="about__content-intro">
                 <p className="about__text">
-                  Je suis <em>développeur web full stack</em>, avec une expérience professionnelle en <em>gestion de projets web</em> et en <em>design</em>.
+                  Je suis <em>chef de projet web</em> et <em>développeur full stack</em>, avec une solide expérience en gestion de projet digital et en développement web, en agence web.
                 </p>
                 <p className="about__text">
-                  Mes différentes expériences professionnelles en gestion de projets digitaux m'ont fait découvrir ma passion pour la programmation web. Souhaitant acquérir des nouvelles compétences techniques, j'ai effectué en 2021 une formation en développement web full stack à <a href="https://oclock.io/" rel="noreferrer" target="_blank" className="about__link"> l’école O’clock</a> avec une spécialisation en <em>React Js</em>.
+                  Mes différentes expériences professionnelles en gestion de projets digitaux m'ont fait découvrir ma passion pour la programmation web. Souhaitant acquérir des nouvelles compétences techniques, j'ai effectué une formation en développement web full stack avec une spécialisation en <em>React Js</em>. J'ai également acquis une solide expérience professionnelle en <em>WordPress</em>.
                 </p>
                 <p className="about__text">
-                  Grâce à une large palette d’expériences en design, en graphisme, en gestion de projet et plus récemment avec ma formation en développement web, j’ai pu me construire un profil à la fois créatif et technique, ce qui me permet d’enrichir chacun de mes projets que ce soit dans le digital ou dans la création.
+                  Grâce à une large palette d’expériences en design, en graphisme, en gestion de projet et en développement web, j’ai pu me construire un profil à la fois créatif et technique, ce qui me permet d’enrichir chacun de mes projets que ce soit dans le digital ou dans la création.
                 </p> 
             </div>
             <div className="about__content-text">
@@ -36,7 +36,10 @@ const About = () => {
                 Pendant mes études et mes expériences en gestion de projets digitaux, j’ai commencé à écrire mes premières lignes de code.
               </p>
               <p className="about__text">
-                  Avec l'envie d'acquérir des nouvelles compétences techniques, en 2021, j'ai effectué une formation en développement web full stack et je me suis spécialisé en React Js.
+                  Avec l'envie d'acquérir des nouvelles compétences techniques, j'ai effectué une formation en développement web full stack et je me suis spécialisé en React Js.
+              </p>
+              <p className="about__text">
+                  Aujourd'hui, je mets à profit cette double expertise en occupant un poste hybride de développeur web et chef de projet digital en agence web, où je peux allier code et gestion de projet au quotidien.
               </p>
               <h3 className="about__title2">Dessin, Illustration & Voyages<span className="about__point">.</span></h3>
               <p>Quand je ne code pas, je voyage avec mon carnet de croquis.</p>

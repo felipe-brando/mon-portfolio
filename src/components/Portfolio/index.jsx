@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Page from '../../components/Page';
 import Loading from './Loading'
 import Card from './Card';
+import manualProjects from './manualProjects';
 import './style.scss';
 
 // == Component
@@ -19,6 +20,11 @@ const Portfolio = () => {
           <div className="portfolio">
             <h2 className="portfolio__title">Portfolio<span className="portfolio__point">.</span></h2>
             <p className="portfolio__subtitle">Sélection de mes travaux</p>
+            {
+              manualProjects.map((project) => (
+                <Card key={project.id} {...project} />
+              ))
+            }
             {
               // eslint-disable-next-line array-callback-return
               repos.map((repo) => {

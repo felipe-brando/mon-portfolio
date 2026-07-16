@@ -15,7 +15,7 @@ const Home = () => {
                 <section className="intro__content">
                     <p className="intro__hello">Bonjour ! 👋 </p>
                     <p className="intro__presentation">Je suis<br/> <span className="intro__name">Felipe Brando</span><span className="intro__point">.</span></p>
-                    <h1 className="intro__text"><em>Développeur web fullstack &<br/> Chef de projet digital</em> avec une touche de créativité,<br/> basé au Pays Basque.</h1>
+                    <h1 className="intro__text"><em>Chef de projet digital &<br/> Développeur web fullstack</em> avec une touche de créativité,<br/> basé au Pays Basque.</h1>
                     <div className="intro__btnsContainer">
                         <a className="intro__btnLink" href={Cv} rel="noreferrer" target="_blank"><button className="intro__cv" type="button">Mon CV</button></a>
                         <ul className="intro__socialList">
