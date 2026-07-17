@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="footer">
         <nav className="footer__main-nav">
             <ul className="footer__list">
-                <li className="footer__item">© Felipe Brando 2021</li>
+                <li className="footer__item">© Felipe Brando 2026</li>
                 <li className="footer__item">
                   <NavLink
                     to='/mentions-legales'
